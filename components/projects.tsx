@@ -51,7 +51,7 @@ export default function Projects() {
     {
       id: 4,
       title: "Chiffreur & déchiffreur Sécurisé",
-      description: "Générateur de mots de passe sécurisé avec analyse de robustesse et support de hachage multi-algorithmes (bcrypt, SHA-256, etc.).",
+      description: "CipherVault est une application web de chiffrement/déchiffrement moderne multi-algorithmes avec génération de QR codes, conçue pour l'exploration interactive de la cryptographie.",
       image: "/ciphervault.png?height=600&width=800",
       tags: ["Next.js","Tailwind CSS", "Shadcn/ui"],
       category: "web",
