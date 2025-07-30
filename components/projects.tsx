@@ -68,6 +68,16 @@ export default function Projects() {
       demoUrl: "https://redbull-landing.vercel.app/",
       githubUrl: "https://github.com/EmmanueljPrime/RedbullLanding",
     },
+    {
+      id: 6,
+      title: "Site vitrine sécurité",
+      description: "Conception d’un site vitrine responsive pour une entreprise fictive de sécurité privée, avec pages dédiées aux services, formulaire de contact et design professionnel.",
+      image: "/securitysite.png?height=600&width=800",
+      tags: ["Next.js"],
+      category: "web",
+      demoUrl: "https://security-site-ashy.vercel.app/",
+      githubUrl: "https://github.com/EmmanueljPrime/SecuritySite",
+    },
 
   ]
 
