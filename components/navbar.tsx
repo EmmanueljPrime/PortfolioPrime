@@ -28,53 +28,59 @@ export default function Navbar() {
   ]
 
   return (
-    <header
-      className={cn(
-        "fixed top-0 w-full z-50 transition-all duration-300",
-        scrolled ? "bg-background/80 backdrop-blur-md border-b" : "bg-transparent",
-      )}
-    >
-      <div className="container mx-auto px-4 py-3 flex items-center justify-between">
-        <Link href="/" className="text-xl font-bold tracking-tighter relative z-10">
-          <span className="text-primary">PrimeDev </span>Pro
-        </Link>
+      <header
+          className={cn(
+              "fixed top-0 w-full z-50 overflow-hidden transition-all duration-500 ease-in-out",
+              isOpen ? "max-h-[500px]" : "max-h-[64px]", // hauteur fermée vs ouverte
+              scrolled || isOpen ? "bg-background/80 backdrop-blur-md border-b" : "bg-transparent"
+          )}
+      >
+        <div className="container mx-auto px-4 py-3 flex items-center justify-between">
+          <Link href="/" className="text-xl font-bold tracking-tighter relative z-10">
+            <span className="text-primary">PrimeDev </span>Pro
+          </Link>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-6">
-          {navLinks.map((link) => (
-            <Link key={link.name} href={link.href} className="text-sm font-medium hover:text-primary transition-colors">
-              {link.name}
-            </Link>
-          ))}
-          <ModeToggle />
-        </nav>
+          {/* Desktop */}
+          <nav className="hidden md:flex items-center gap-6">
+            {navLinks.map((link) => (
+                <Link
+                    key={link.name}
+                    href={link.href}
+                    className="text-sm font-medium hover:text-primary transition-colors"
+                >
+                  {link.name}
+                </Link>
+            ))}
+            <ModeToggle />
+          </nav>
 
-        {/* Mobile Navigation Toggle */}
-        <div className="flex items-center gap-2 md:hidden">
-          <ModeToggle />
-          <Button variant="ghost" size="icon" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle Menu">
-            {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-          </Button>
+          {/* Mobile toggle */}
+          <div className="flex items-center gap-2 md:hidden">
+            <ModeToggle />
+            <Button variant="ghost" size="icon" onClick={() => setIsOpen(!isOpen)} aria-label="Toggle Menu">
+              {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+            </Button>
+          </div>
         </div>
 
-        {/* Mobile Navigation Menu */}
-        {isOpen && (
-          <div className="fixed inset-0 bg-background z-40 pt-16 px-4 md:hidden">
-            <nav className="flex flex-col items-center gap-6 pt-8">
-              {navLinks.map((link) => (
-                <Link
+        {/* Mobile links dans même bloc */}
+        <nav
+            className={cn(
+                "flex-col items-center gap-4 pt-4 pb-6 md:hidden transition-opacity duration-300",
+                isOpen ? "flex opacity-100" : "hidden opacity-0"
+            )}
+        >
+          {navLinks.map((link) => (
+              <Link
                   key={link.name}
                   href={link.href}
                   className="text-lg font-medium hover:text-primary transition-colors"
                   onClick={() => setIsOpen(false)}
-                >
-                  {link.name}
-                </Link>
-              ))}
-            </nav>
-          </div>
-        )}
-      </div>
-    </header>
+              >
+                {link.name}
+              </Link>
+          ))}
+        </nav>
+      </header>
   )
 }

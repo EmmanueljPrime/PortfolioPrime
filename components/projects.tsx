@@ -192,7 +192,7 @@ export default function Projects() {
                     ))}
                   </div>
 
-                  <div className="flex gap-3">
+                  <div className="flex gap-3 mb-auto">
                     <Button size="sm" asChild>
                       <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="mr-2 h-4 w-4" />
