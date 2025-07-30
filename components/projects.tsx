@@ -26,7 +26,7 @@ export default function Projects() {
       tags: ["React", "Next.js", "Stripe", "Tailwind"],
       category: "web",
       demoUrl: "http://localhost:3001/",
-      githubUrl: "#",
+      githubUrl: "https://github.com/EmmanueljPrime/wovely",
     },
     {
       id: 2,
@@ -36,7 +36,7 @@ export default function Projects() {
       tags: ["Vue.js", "Mysql"],
       category: "web",
       demoUrl: "http://localhost:5173/",
-      githubUrl: "#",
+      githubUrl: "https://github.com/EmmanueljPrime/Kitui",
     },
     {
       id: 3,
@@ -46,7 +46,7 @@ export default function Projects() {
       tags: ["Next.js","Tailwind CSS", "Shadcn/ui","Bcrypt"],
       category: "web",
       demoUrl: "https://prime-pass-roan.vercel.app/",
-      githubUrl: "#",
+      githubUrl: "https://github.com/EmmanueljPrime/PrimePass",
     },
     {
       id: 4,
@@ -56,7 +56,7 @@ export default function Projects() {
       tags: ["Next.js","Tailwind CSS", "Shadcn/ui"],
       category: "web",
       demoUrl: "https://ciphervault-iota.vercel.app/",
-      githubUrl: "#",
+      githubUrl: "https://github.com/EmmanueljPrime/ciphervault",
     },
     {
       id: 5,
@@ -66,48 +66,9 @@ export default function Projects() {
       tags: ["Next.js","Framer Motion"],
       category: "web",
       demoUrl: "https://redbull-landing.vercel.app/",
-      githubUrl: "#",
+      githubUrl: "https://github.com/EmmanueljPrime/RedbullLanding",
     },
-    // {
-    //   id: 3,
-    //   title: "Dashboard analytique",
-    //   description: "Un tableau de bord interactif pour visualiser et analyser des données complexes.",
-    //   image: "/placeholder.svg?height=600&width=800",
-    //   tags: ["React", "D3.js", "Node.js"],
-    //   category: "dashboard",
-    //   demoUrl: "#",
-    //   githubUrl: "#",
-    // },
-    // {
-    //   id: 4,
-    //   title: "Application mobile de fitness",
-    //   description: "Une application mobile pour suivre vos entraînements et votre progression.",
-    //   image: "/placeholder.svg?height=600&width=800",
-    //   tags: ["React Native", "Expo", "Firebase"],
-    //   category: "mobile",
-    //   demoUrl: "#",
-    //   githubUrl: "#",
-    // },
-    // {
-    //   id: 5,
-    //   title: "Site vitrine d'agence",
-    //   description: "Un site vitrine élégant pour une agence de design avec animations fluides.",
-    //   image: "/placeholder.svg?height=600&width=800",
-    //   tags: ["Next.js", "GSAP", "Tailwind"],
-    //   category: "web",
-    //   demoUrl: "#",
-    //   githubUrl: "#",
-    // },
-    // {
-    //   id: 6,
-    //   title: "API de gestion de contenu",
-    //   description: "Une API RESTful pour gérer le contenu d'applications web et mobiles.",
-    //   image: "/placeholder.svg?height=600&width=800",
-    //   tags: ["Node.js", "Express", "MongoDB"],
-    //   category: "backend",
-    //   demoUrl: "#",
-    //   githubUrl: "#",
-    // },
+
   ]
 
   const filteredProjects = filter === "all" ? projects : projects.filter((project) => project.category === filter)
