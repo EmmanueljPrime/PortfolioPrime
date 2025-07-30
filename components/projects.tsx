@@ -62,7 +62,7 @@ export default function Projects() {
       id: 5,
       title: "Landing Page Produit",
       description: "Landing page animée pour Red Bull Zero, réalisée avec Next.js et Framer Motion.",
-      image: "/redbulllanding.png?height=600&width=800",
+      image: "/redbulllanding1.png?height=600&width=800",
       tags: ["Next.js","Framer Motion"],
       category: "web",
       demoUrl: "https://redbull-landing.vercel.app/",
