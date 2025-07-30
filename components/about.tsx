@@ -59,7 +59,7 @@ export default function About() {
               Je m’intéresse aussi aux évolutions du web et je prends plaisir à apprendre et à améliorer mes compétences au quotidien.
             </p>
 
-            <div className="grid grid-cols-2 gap-4 mb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
               <div>
                 <h3 className="font-medium mb-2">Nom</h3>
                 <p className="text-muted-foreground">Emmanuel Prime</p>
