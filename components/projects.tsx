@@ -58,6 +58,16 @@ export default function Projects() {
       demoUrl: "https://ciphervault-iota.vercel.app/",
       githubUrl: "#",
     },
+    {
+      id: 5,
+      title: "Landing Page Produit",
+      description: "Landing page animée pour Red Bull Zero, réalisée avec Next.js et Framer Motion.",
+      image: "/redbulllanding.png?height=600&width=800",
+      tags: ["Next.js","Framer Motion"],
+      category: "web",
+      demoUrl: "https://redbull-landing.vercel.app/",
+      githubUrl: "#",
+    },
     // {
     //   id: 3,
     //   title: "Dashboard analytique",
