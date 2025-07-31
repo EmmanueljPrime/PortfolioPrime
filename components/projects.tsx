@@ -19,26 +19,6 @@ export default function Projects() {
 
   const projects = [
     {
-      id: 1,
-      title: "Wovely",
-      description: "Une plateforme de mise en relation Client -> Couturier avec panier, paiement, gestion de projets et gestion des commandes.",
-      image: "/wovely.png?height=600&width=800",
-      tags: ["React", "Next.js", "Stripe", "Tailwind"],
-      category: "web",
-      demoUrl: "http://localhost:3001/",
-      githubUrl: "https://github.com/EmmanueljPrime/wovely",
-    },
-    {
-      id: 2,
-      title: "Application de céation de kit ui",
-      description: "Une application de création de kit ui avec authentification et fonctionnalités collaboratives.",
-      image: "/kitui.png?height=600&width=800",
-      tags: ["Vue.js", "Mysql"],
-      category: "web",
-      demoUrl: "http://localhost:5173/",
-      githubUrl: "https://github.com/EmmanueljPrime/Kitui",
-    },
-    {
       id: 3,
       title: "Générateur de Mot de passe complexe",
       description: "Générateur de mots de passe sécurisé avec analyse de robustesse et support de hachage multi-algorithmes (bcrypt, SHA-256, etc.).",
@@ -77,6 +57,26 @@ export default function Projects() {
       category: "web",
       demoUrl: "https://security-site-ashy.vercel.app/",
       githubUrl: "https://github.com/EmmanueljPrime/SecuritySite",
+    },
+    {
+      id: 1,
+      title: "Wovely",
+      description: "Une plateforme de mise en relation Client -> Couturier avec panier, paiement, gestion de projets et gestion des commandes.",
+      image: "/wovely.png?height=600&width=800",
+      tags: ["React", "Next.js", "Stripe", "Tailwind"],
+      category: "web",
+      demoUrl: "#",
+      githubUrl: "https://github.com/EmmanueljPrime/wovely",
+    },
+    {
+      id: 2,
+      title: "Application de céation de kit ui",
+      description: "Une application de création de kit ui avec authentification et fonctionnalités collaboratives.",
+      image: "/kitui.png?height=600&width=800",
+      tags: ["Vue.js", "Mysql"],
+      category: "web",
+      demoUrl: "#",
+      githubUrl: "https://github.com/EmmanueljPrime/Kitui",
     },
 
   ]
