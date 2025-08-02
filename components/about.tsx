@@ -79,7 +79,7 @@ export default function About() {
             </div>
 
             <Button asChild>
-              <a href="CVEPDEV.pdf" download>
+              <a href="CVEPDEV2.pdf" download>
                 <Download className="mr-2 h-4 w-4" />
                 Télécharger mon CV
               </a>
