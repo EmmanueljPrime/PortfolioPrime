@@ -28,6 +28,14 @@ export default function Skills() {
     { name: "ViteJs", icon: "devicon-vitejs-plain" },
   ]
 
+  const tools = [
+    {name: "Git",icon: "devicon-git-plain" },
+    {name: "GitHub",icon: "devicon-github-original" },
+    {name: "Docker",icon: "devicon-docker-plain" },
+    {name: "Vercel",icon: "devicon-vercel-plain" },
+    {name: "Figma",icon: "devicon-figma-plain" },
+  ]
+
   const services = [
     {
       icon: <Layout className="h-10 w-10 text-primary" />,
@@ -112,43 +120,66 @@ export default function Skills() {
           ))}
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5 }}
+              initial={{opacity: 0, y: 20}}
+              animate={inView ? {opacity: 1, y: 0} : {}}
+              transition={{duration: 0.5}}
           >
             <h3 className="text-2xl font-bold mb-6">Frontend</h3>
             <div className="grid grid-cols-3 gap-6">
               {frontendSkills.map((skill, index) => (
-                <div key={index} className="flex flex-col items-center">
-                  <div className="w-20 h-20 flex items-center justify-center mb-2 rounded-lg bg-muted/50 hover:bg-primary/10 transition-colors">
-                    <i className={`${skill.icon} text-4xl text-primary`}></i>
+                  <div key={index} className="flex flex-col items-center">
+                    <div
+                        className="w-20 h-20 flex items-center justify-center mb-2 rounded-lg bg-muted/50 hover:bg-primary/10 transition-colors">
+                      <i className={`${skill.icon} text-4xl text-primary`}></i>
+                    </div>
+                    <span className="text-sm font-medium text-center">{skill.name}</span>
                   </div>
-                  <span className="text-sm font-medium text-center">{skill.name}</span>
-                </div>
               ))}
             </div>
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5, delay: 0.2 }}
+              initial={{opacity: 0, y: 20}}
+              animate={inView ? {opacity: 1, y: 0} : {}}
+              transition={{duration: 0.5, delay: 0.2}}
           >
             <h3 className="text-2xl font-bold mb-6">Backend</h3>
             <div className="grid grid-cols-3 gap-6">
               {backendSkills.map((skill, index) => (
-                <div key={index} className="flex flex-col items-center">
-                  <div className="w-20 h-20 flex items-center justify-center mb-2 rounded-lg bg-muted/50 hover:bg-primary/10 transition-colors">
-                    <i className={`${skill.icon} text-4xl text-primary`}></i>
+                  <div key={index} className="flex flex-col items-center">
+                    <div
+                        className="w-20 h-20 flex items-center justify-center mb-2 rounded-lg bg-muted/50 hover:bg-primary/10 transition-colors">
+                      <i className={`${skill.icon} text-4xl text-primary`}></i>
+                    </div>
+                    <span className="text-sm font-medium text-center">{skill.name}</span>
                   </div>
-                  <span className="text-sm font-medium text-center">{skill.name}</span>
-                </div>
+              ))}
+            </div>
+          </motion.div>
+
+          <motion.div
+              initial={{opacity: 0, y: 20}}
+              animate={inView ? {opacity: 1, y: 0} : {}}
+              transition={{duration: 0.5, delay: 0.4}}
+          >
+            <h3 className="text-2xl font-bold mb-6">Outils</h3>
+            <div className="grid grid-cols-3 gap-6">
+              {tools.map((tool, index) => (
+                  <div key={index} className="flex flex-col items-center">
+                    <div
+                        className="w-20 h-20 flex items-center justify-center mb-2 rounded-lg bg-muted/50 hover:bg-primary/10 transition-colors">
+                      <i className={`${tool.icon} text-4xl text-primary`}></i>
+                    </div>
+                    <span className="text-sm font-medium text-center">{tool.name}</span>
+                  </div>
               ))}
             </div>
           </motion.div>
         </div>
+
+
       </div>
     </section>
   )
