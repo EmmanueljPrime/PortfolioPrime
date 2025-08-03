@@ -58,7 +58,7 @@ export default function Contact() {
     {
       icon: <MapPin className="h-10 w-10 text-primary" />,
       title: "Localisation",
-      details: "Bordeaux & Paris, France",
+      details: "Bordeaux, Toulouse, Biarritz, Marseille",
     },
     {
       icon: <Mail className="h-10 w-10 text-primary" />,
