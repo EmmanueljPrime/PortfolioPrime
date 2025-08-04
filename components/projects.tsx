@@ -70,7 +70,7 @@ export default function Projects() {
     },
     {
       id: 2,
-      title: "Application de céation de kit ui",
+      title: "Application de création de kit ui",
       description: "Une application de création de kit ui avec authentification et fonctionnalités collaboratives.",
       image: "/kitui.png?height=600&width=800",
       tags: ["Vue.js", "Mysql"],
