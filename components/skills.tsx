@@ -34,6 +34,7 @@ export default function Skills() {
     {name: "Docker",icon: "devicon-docker-plain" },
     {name: "Vercel",icon: "devicon-vercel-plain" },
     {name: "Figma",icon: "devicon-figma-plain" },
+    {name: "Jira",icon: "devicon-jira-plain" },
   ]
 
   const services = [
